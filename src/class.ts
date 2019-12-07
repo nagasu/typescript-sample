@@ -1,8 +1,20 @@
-class Foo {
-    method(): void {
+class Human {
+    private readonly name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    say(): void {
+        console.log('Hello', this.name);
+    }
+    
+    static hello(): void {
         console.log('Hello');
     }
 }
 
-const obj: Foo = new Foo();
-console.log(obj.method());
+const obj: Human = new Human('satoshi');
+console.log(obj.say());
+
+console.log(Human.hello());
