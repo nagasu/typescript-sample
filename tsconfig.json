@@ -2,11 +2,14 @@
   "compilerOptions": {
     "target": "es5",
     "module": "es2015",
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "paths": { "@/*": [ "./*" ] }
   },
   "include": [
     "src/**/*"
